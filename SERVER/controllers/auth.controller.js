@@ -1,4 +1,4 @@
-import User from "../models/auth.model.js";
+import User from "../models/user.model.js";
 import bcrypt from 'bcryptjs'
 import generateWebTokenAndSetCookie from "../utils/generateToken.js";
 

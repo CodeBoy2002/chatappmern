@@ -1,18 +1,13 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './components/Home'
-import Upload from './components/Upload'
-import SecureUpload from './components/SecureUpload'
+import Login from './pages/Login/Login'
+import SignUp from './pages/Signup/SignUp'
+import Home from './pages/Home/Home'
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/upload' element={<Upload/>}/>
-        <Route path='/secure-upload' element={<SecureUpload/>}/>
-      </Routes>
-    </BrowserRouter>
+    <div className='p-4 h-screen flex items-center justify-center'>
+      <Home/>
+    </div>
   )
 }
 

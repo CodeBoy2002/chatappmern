@@ -32,7 +32,7 @@ export const signupUser = async (req, res) => {
 
         if(newUser) {
             // Generate JWT Token here
-            generateWebTokenAndSetCookie(newUser._id, res)
+            generateWebTokenAndSetCookie(newUser._id, res) 
             await newUser.save()
     
             res.status(201).json({

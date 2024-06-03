@@ -1,6 +1,4 @@
 import React from 'react'
-import Login from './pages/Login/Login'
-import SignUp from './pages/Signup/SignUp'
 import Home from './pages/Home/Home'
 
 const App = () => {

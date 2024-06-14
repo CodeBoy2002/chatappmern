@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon SERVER/index.js"
+    "dev": "nodemon SERVER/index.js",
+    "start": "node SERVER/index.js",
+    "build": "npm install && npm install --prefix CLIENT && npm run build --prefix CLIENT"
   },
   "keywords": [],
   "author": "",
